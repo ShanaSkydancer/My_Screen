@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="myscreen.css">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <title>My Screen</title>
+  </head>
+  <body>
+
+    <h1>What is the best pet for you?</h1>
+
+  <div id="modalWrap">
+    <!-- <div id="modalHeader">
+      <span id="QOne" class="active">1</span>
+      <span id="QTwo">2</span>
+      <span id="QThree">3</span>
+      <span id="QResults">4</span>
+    </div> -->
+
+    <div id="modalBodies">
+
+    <div id="textAnswer"class="modal">
+      <h2>Which do you prefer? Long hair or short haired animals?</h2>
+      <input id="textInput" type="text" placeholder="Long or short...">
+      <button id="textButton">ENTER</buttons>
+    </div>
+
+    <br>
+  </br>
+
+    <div id="radioAnswer" class="modal">
+    <h2>On average, how much would you spend at home with your pet?</h2>
+      <input id="radioInput" type="radio" name="time" value="1"> 1
+      <input id="radioInput" type="radio" name="time" value="2"> 2
+      <input id="radioInput" type="radio" name="time" value="3"> 3
+      <input id="radioInput" type="radio" name="time" value="4"> 4
+      <input id="radioInput" type="radio" name="time" value="5"> 5
+      <br>
+    </br>
+      <button id="radioButton">ENTER</buttons>
+    </div>
+
+<br>
+  </br>
+
+    <div id="dropdAnswer" class="modal">
+      <h2>Do you like big or small animals?</h2>
+    <div id="dropdownSelect">
+      <select id="dropdown">
+        <option id="ddOption" value="Big">Big</option>
+        <option id="ddOption" value="Small">Small</option>
+      </select>
+    <button id="dropdButton">ENTER</buttons>
+    </div>
+    </div>
+
+    <br>
+  </br>
+
+  </div>
+</div>
+
+<div id="displayResults">
+  </div>
+
+<script id="myTemplate" type="text/x-handlebars-template">
+  <div id="results" class="modal">
+    {{results}}
+    <div>
+  </script>
+
+  </body>
+  <script src="myscreen.js"></script>
+
+</html>
