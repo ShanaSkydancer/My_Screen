@@ -27,8 +27,8 @@ body {
 }*/
 
 h1 {
-  /*background-image: url("http://www.lifestylepets.org/wp-content/uploads/2015/11/pet_composite-670x300.jpg");*/
-  background-image: url("http://bestinshowpetsitting.com/wp-content/uploads/2015/08/Pets.jpg");
+  /*background-image: url("https://raw.githubusercontent.com/ShanaSkydancer/My_Screen/master/Images/HeaderEDIT.jpg");*/
+  background-image: url("http://i.imgur.com/nJuivqb.jpg");
   text-align: center;
   margin-bottom: 30px;
   margin: 0;
@@ -43,19 +43,29 @@ h1 {
 #modalWrap{
   max-width: 600px;
   margin: 50px auto;
-  /*transition: transform 300ms ease-in-out;*/
 }
 
 #modalBodies {
+  position: relative;
+  perspective: 1000px;
+}
+
+.modal {
   background: white;
   padding: 40px 100px;
   box-shadow: 0px 50px 30px -30px rgba(0,0,0,0.3);
-  margin-bottom: 50px;
-  position: absolute;
+  /*margin-bottom: 50px;*/
+  /*position: absolute;*/
   box-sizing: border-box;
-  width: 50%;
+  width: 100%;
   /*transform-origin: top left;*/
-  display: block;
+  /*display: none;*/
+}
+
+h2 {
+  color: #2F4F4F;
+  font-size: 25px;
+  font-family: 'BioRhyme', serif;
 }
 
 #textInput {
@@ -69,12 +79,27 @@ h1 {
   outline: none;
 }
 
+#longButton, #shortButton {
+  background-color: #008CBA;
+  font-size: 20px;
+  font-family: 'BioRhyme', serif;
+  cursor: pointer, cursor: hand;
+  color: white;
+  /*-webkit-transition-duration: 0.4s;*/
+  transition-duration: 0.4s;
+}
+
+#longButton:hover, #shortButton:hover {
+  background-color: white;
+  color: black;
+}
+
 #textButton {
   margin-left: 25em;
 }
 
-#radioInput {
-  margin-right: 30px;
+.radioInput {
+  margin-right: 10px;
 }
 
 #radioButton {
@@ -85,7 +110,7 @@ h1 {
   font-family: 'Jura', sans-serif;
   font-size: 20px;
   color: black;
-  background-color: #00008B;
+  background-color: #008CBA;
   color: white;
   padding: 12px;
   margin-right: 12em;
@@ -94,4 +119,38 @@ h1 {
 
 #dropdown:hover, #dropdown:focus {
   background-color: #797979;
+}
+
+#dropdButton {
+  margin-left: 345px;
+}
+
+#enterButton {
+  margin-top: 2em;
+}
+
+#resultsName {
+  color: #2F4F4F;
+  font-family: 'BioRhyme', serif;
+  font-size: 30px;
+}
+
+#displayResults {
+  color: #2F4F4F;
+  font-family: 'BioRhyme', serif;
+  font-size: 35px;
+}
+
+#results img {
+  height: 240px;
+  width: 400px;
+  /*float:right;
+  padding-bottom: 1em;*/
+}
+
+#results {
+  display: none;
+  color: #2F4F4F;
+  font-size: 30px;
+  font-family: 'BioRhyme', serif;
 }

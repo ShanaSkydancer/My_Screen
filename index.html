@@ -22,24 +22,29 @@
     <div id="modalBodies">
 
     <div id="textAnswer"class="modal">
-      <h2>Which do you prefer? Long hair or short haired animals?</h2>
-      <input id="textInput" type="text" placeholder="Long or short...">
-      <button id="textButton">ENTER</buttons>
+      <h2>Please enter your name</h2>
+      <input id="textInput" type="text" placeholder="Name...">
+    </div>
+
+    <br>
+  </br>
+
+    <div id="buttonAnswer"class="modal">
+      <h2>Which do you prefer:<br>Long haired or short haired animals?</h2>
+        <button id="longButton" type="button" value="long">Long</button>
+        <button id="shortButton" type="button" value="short">Short</button>
     </div>
 
     <br>
   </br>
 
     <div id="radioAnswer" class="modal">
-    <h2>On average, how much would you spend at home with your pet?</h2>
-      <input id="radioInput" type="radio" name="time" value="1"> 1
-      <input id="radioInput" type="radio" name="time" value="2"> 2
-      <input id="radioInput" type="radio" name="time" value="3"> 3
-      <input id="radioInput" type="radio" name="time" value="4"> 4
-      <input id="radioInput" type="radio" name="time" value="5"> 5
-      <br>
-    </br>
-      <button id="radioButton">ENTER</buttons>
+    <h2>On average, how much time would you spend at home with your pet?</h2>
+      <input class="radioInput" type="radio" name="radioName" value="1"> 1
+      <input class="radioInput" type="radio" name="radioName" value="2"> 2
+      <input class="radioInput" type="radio" name="radioName" value="3"> 3
+      <input class="radioInput" type="radio" name="radioName" value="4"> 4
+      <input class="radioInput" type="radio" name="radioName" value="5"> 5
     </div>
 
 <br>
@@ -49,27 +54,24 @@
       <h2>Do you like big or small animals?</h2>
     <div id="dropdownSelect">
       <select id="dropdown">
-        <option id="ddOption" value="Big">Big</option>
-        <option id="ddOption" value="Small">Small</option>
+        <option id="ddOption" value="big" name="big">Big</option>
+        <option id="ddOption" value="small" name="small">Small</option>
       </select>
-    <button id="dropdButton">ENTER</buttons>
+    <button id="enterButton" type="click">ENTER</buttons>
     </div>
     </div>
 
     <br>
   </br>
 
-  </div>
-</div>
-
-<div id="displayResults">
-  </div>
-
-<script id="myTemplate" type="text/x-handlebars-template">
   <div id="results" class="modal">
-    {{results}}
+    <h2>The pet for you is: </h2>
+    <div id="displayResults">
+    </div>
     <div>
-  </script>
+
+</div>
+</div>
 
   </body>
   <script src="myscreen.js"></script>
