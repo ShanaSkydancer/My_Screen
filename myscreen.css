@@ -4,30 +4,7 @@ body {
   font-family: 'BioRhyme', serif;
 }
 
-/*#modalHeader {
-    display: inline-block;
-}
-
-#modalHeader span {
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-#modalHeader span.active {
-    background-color:	#00008B;
-    color: white;
-    border-radius: 5px;
-}
-
-#modalHeader span:hover:not(.active) {
-    background-color: #ddd;
-    border-radius: 5px;
-}*/
-
 h1 {
-  /*background-image: url("https://raw.githubusercontent.com/ShanaSkydancer/My_Screen/master/Images/HeaderEDIT.jpg");*/
   background-image: url("http://i.imgur.com/nJuivqb.jpg");
   text-align: center;
   margin-bottom: 30px;
@@ -54,12 +31,8 @@ h1 {
   background: white;
   padding: 40px 100px;
   box-shadow: 0px 50px 30px -30px rgba(0,0,0,0.3);
-  /*margin-bottom: 50px;*/
-  /*position: absolute;*/
   box-sizing: border-box;
   width: 100%;
-  /*transform-origin: top left;*/
-  /*display: none;*/
 }
 
 h2 {
@@ -85,7 +58,6 @@ h2 {
   font-family: 'BioRhyme', serif;
   cursor: pointer, cursor: hand;
   color: white;
-  /*-webkit-transition-duration: 0.4s;*/
   transition-duration: 0.4s;
 }
 
@@ -144,8 +116,6 @@ h2 {
 #results img {
   height: 240px;
   width: 400px;
-  /*float:right;
-  padding-bottom: 1em;*/
 }
 
 #results {

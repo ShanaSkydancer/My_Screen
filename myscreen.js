@@ -1,35 +1,27 @@
-// window.onload = function() {
-//   document.getElementById('results').style.display = 'none';
-// };
-
 var answerList = [];
 
 var longButton = document.getElementById("longButton");
 longButton.onclick = function(){
-  // event.target.longButton;
   answerList.push("long");
+  longButton.style.backgroundColor = "white";
+  longButton.style.color = "black";
   longButton.disabled = 'true';
   document.getElementById("shortButton").disabled = 'true';
-  console.log(answerList);
 };
 
 var shortButton = document.getElementById("shortButton");
 shortButton.onclick = function(){
-  // event.target.shortButton;
   answerList.push("short");
+  shortButton.style.backgroundColor = "white";
+  shortButton.style.color = "black";
   shortButton.disabled = 'true';
   document.getElementById("longButton").disabled = 'true';
-  console.log(answerList);
 };
 
 var enterButton = document.getElementById("enterButton");
 enterButton.addEventListener("click", function(){
   event.preventDefault();
 
-  console.log(answerList);
-
-  // var radioInput = document.getElementsByClassName("radioInput");
-  // radioAnswer.addEventListener("change", function(){
     var radioName = document.querySelectorAll(".radioInput");
     var selected = "";
     var radioNum = 0;
@@ -38,12 +30,8 @@ enterButton.addEventListener("click", function(){
       if (currentButton.checked){
         radioNum = currentButton.value;
         }
-        // return selected;
-        // answerList.push(selected);
     };
     radioNum = Number(radioNum);
-    // var radioNum = currentButton.value;
-    // radioNum = Number(getRadioValue(radioName))
     if (radioNum === 1 || radioNum === 2){
       selected = "little";
       answerList.push(selected);
@@ -56,11 +44,9 @@ enterButton.addEventListener("click", function(){
       selected = "alot";
       answerList.push(selected);
     }
-    console.log(answerList);
 
 var dropdown = document.getElementById('dropdown');
 var selectedDD = dropdown.options[dropdown.selectedIndex].value;
-console.log(answerList);
 var ddSelect = "";
   if (selectedDD === "big"){
     ddSelect = selectedDD;
@@ -70,11 +56,8 @@ var ddSelect = "";
   } else {
     ddSelect = selectedDD;
   }
-  // return ddSelect;
   answerList.push(ddSelect);
   console.log(answerList);
-
-// document.getElementById("displayTheResults").innerHTML = displayTheResults();
 
 function displayTheResults(results) {
   switch(results){
@@ -127,16 +110,9 @@ function displayTheResults(results) {
       break;
       }
  }
-// var test = displayTheResults();
-// console.log(test);
 
 document.getElementById('results').style.display = 'block';
 var textInput = document.getElementById("textInput");
 var nameInput = textInput.value;
 document.getElementById("displayResults").innerHTML = nameInput + "<br>" + displayTheResults(answerList.toString());
 })
-
-
-// var modal = document.getElementsByClassName("modal");
-// var currentModal = 0;
-// modal[currentModal].classList.toggle('hidden');
